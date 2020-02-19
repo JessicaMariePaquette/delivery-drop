@@ -1,0 +1,43 @@
+main{
+	.top{
+		height: 90vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	}
+
+	h1{
+	text-align: center;
+	font-size:2rem;
+
+	}
+
+	.white{
+		grid-row: 1;
+	}
+	 .blue{
+	 	color:#66A2BD;
+	 	grid-row:2;
+	}
+
+	.mockup{
+	grid-row: 3;
+	}
+
+	.box{
+		padding: 3rem 0;
+		grid-row: 4;
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-width: 70em) {
+	main{
+		h1{
+			font-size: 3rem;
+		}
+	}
+
+}
