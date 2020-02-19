@@ -24,19 +24,78 @@ main{
 	grid-row: 3;
 	}
 
+	.mockup2{
+		display: none;
+		width: 82%;
+	}
+
 	.box{
-		padding: 3rem 0;
+		padding-top: 3rem;
+		margin-bottom: 0;
 		grid-row: 4;
 		width: 100%;
 	}
 
+	.bottom{
+		ul li{
+			font-size: 1.5rem;
+			line-height: 3.5rem;
+		}
+	}
 
+	.feat{
+		text-align: center;
+		padding-bottom: 3rem;
+	}
+	.faq{
+		text-align: center;
+		background-color: #66A2BD;
+		padding: 3rem 0;
+	}
+
+
+}
+
+@media screen and (min-width: 100em) {
+main{
+	.bottom{
+				width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		align-items: top;
+		margin-top: -1.6rem;}
+
+			.faq{
+		grid-column: 2;
+		text-align: right; 
+		width: 86%;
+		padding: 0 8rem 0 0}
+
+			.feat{
+		grid-column: 1;
+		text-align: left;
+		width: 86%;
+		padding-left: 8rem;
+		padding-bottom: 0;
+	}
+}
 }
 
 @media screen and (min-width: 70em) {
 	main{
 		h1{
 			font-size: 3rem;
+		}
+		.mockup{
+			display: none;
+			
+
+	}
+
+	.mockup2{
+		display: inline-block;
+		grid-row: 3;
 		}
 	}
 
